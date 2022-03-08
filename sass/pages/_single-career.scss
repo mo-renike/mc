@@ -1,0 +1,155 @@
+.single-career-page {
+  background: $color-gray-6;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5em 4em;
+
+  .single-career-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em 0;
+    gap: 1em;
+
+    .search-and-filter {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .filters {
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        gap: 0.6em;
+
+        &__input {
+          border: 0px;
+          background: white;
+          color: $color-gray-7;
+          padding: 0.8em;
+          border-radius: 4px;
+          outline: none;
+        }
+      }
+
+      .search-wrapper {
+        display: flex;
+        gap: 0.6em;
+
+        &__search {
+          font-family: "Montserrat", sans-serif;
+          border: 0px;
+          color: $color-gray-7;
+          border-radius: 4px;
+          padding: 0 1em;
+          width: 26em;
+        }
+        button {
+          font-family: "Montserrat", sans-serif;
+          border-radius: 4px;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 0.8em;
+        }
+      }
+    }
+    .line {
+      border-bottom: 1px solid $color-gray-5;
+      width: 100%;
+    }
+    .main-career-section {
+      width: 100%;
+      display: flex;
+      gap: 2em;
+      font-family: sans-serif;
+
+      &__left {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .job-card {
+          background: white;
+          border-radius: 5px;
+          width: 100%;
+          padding: 1.4em;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          font-family: "Montserrat", sans-serif;
+          border: 1px solid $color-gray-8;
+
+          &__header {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            img {
+              width: 60px;
+            }
+            .job-title {
+              h2 {
+                font-size: 1em;
+                font-weight: 700;
+              }
+              span {
+                font-size: 0.8em;
+                color: $color-gray-1;
+                font-weight: 700;
+              }
+            }
+          }
+          &__description {
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.75em;
+            font-weight: 500;
+            color: $color-gray-7;
+            span {
+              font-size: 1.1em;
+              color: $color-gray-7;
+              font-weight: 700;
+            }
+            a {
+              text-decoration: none;
+              font-weight: 700;
+              font-style: italic;
+            }
+          }
+          &__footer {
+            display: flex;
+            width: 100%;
+            flex-direction: row-reverse;
+            color: $color-gray-1;
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      &__right {
+        width: 70%;
+        background: white;
+        border-radius: 5px;
+        height: 100%;
+        padding: 3em 2em;
+
+        .single-job {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          &__header-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          &__header-left {
+            display: flex;
+            flex-direction: column;
+          }
+          &__header {
+          }
+        }
+      }
+    }
+  }
+}

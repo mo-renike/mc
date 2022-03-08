@@ -1,0 +1,100 @@
+.court {
+  &-layout {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  &__h1 {
+    flex: 0 0 40%;
+  }
+
+  &__img {
+    // flex: 0 0 50%;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 10px;
+
+    img {
+     width: 100%;
+    height: 300px;
+      object-fit: contain;
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+
+  &__col {
+    &-1 {
+      flex: 0 0 50%;
+    }
+
+    &-2 {
+      flex: 0 0 20%;
+      border-left: 1px solid red;
+      padding-left: 2rem;
+    }
+
+    &-3 {
+      flex: 0 0 20%;
+      border-left: 1px solid red;
+      padding-left: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.38rem;
+    font-weight: 200;
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-deed {
+    &__h1 {
+      font-size: 1.3rem;
+      color: $color-primary-tango;
+      line-height: 2.1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &__p {
+      font-size: 2rem;
+      font-weight: 200;
+      line-height: 4rem;
+    }
+  }
+
+  &-cert {
+    &__h1 {
+      font-size: 1.4rem;
+      color: $color-primary-tango;
+      line-height: 2.1rem;
+      font-weight: 500;
+    }
+
+    &__p {
+      font-weight: 200;
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+#Court3D-2,
+#Court3D {
+  display: none;
+}
+
+.court-block {
+  display: block !important;
+}
+
+.court-none {
+  display: none;
+}

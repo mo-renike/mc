@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Middlechase</title>
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <main id="main-content">
+      <!-- Navigation Section -->
+      <div class="navigation">
+        <div class="navigation__wrapper">
+          <div class="navigation__list">
+            <p class="navigation__title">quick links</p>
+            <a href="#" class="navigation__item">Virtual tour</a>
+            <a href="#" class="navigation__item">Privacy policy</a>
+            <a href="#" class="navigation__item"
+              >Terms & condition</a
+            >
+          </div>
+          <div class="navigation__list">
+            <p class="navigation__title">projects</p>
+            <a href="choose-estate.html" class="navigation__item">buy land</a>
+            <a href="choose-terrace-estate.html" class="navigation__item">buy terraces</a>
+            <a href="#" class="navigation__item"> buy apartments</a>
+          </div>
+          <div class="navigation__list">
+            <p class="navigation__title">Main</p>
+            <a href="./index.html" class="navigation__item">home</a>
+            <a href="about.html" class="navigation__item">about</a>
+            <a href="contact.html" class="navigation__item">contact</a>
+            <a href="appointment.html" class="navigation__item"
+              >book inspection</a
+            >
+          </div>
+        </div>
+        <!-- <div class="line"></div> -->
+        <div class="navigation__footer">
+          <form action="" class="navigation__form">
+            <h5>Subscribe to our Newsletter</h5>
+            <div class="navigation__form-group">
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="newsletter-subscriber"
+                id="newsletter-email"
+              />
+              <button type="submit"><i class="fa fa-arrow-right"></i></button>
+            </div>
+          </form>
+          <div class="navigation__socials">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <img src="./img/logo2.png" alt="logo" class="logo" />
+        </div>
+        <div class="navigation__cancel-btn">
+          <p class="navigation__cancel-btn--text">X</p>
+        </div>
+      </div>
+      <!-- End Of Navigation Section -->
+
+      <!-- Top-header Section Begins -->
+      <header class="top-header">
+        <div class="top-header__logo">
+          <a href="index.html">
+            <img src="img/logo2.png" alt="MD" class="logo"
+          /></a>
+        </div>
+        <div class="top-header__nav">
+          <div class="top-header__login">
+            <span class="top-header__login--text">Login</span>
+            <ion-icon
+              name="person-outline"
+              class="top-header__login--icon"
+            ></ion-icon>
+          </div>
+          <div class="top-header__menu" id="menu">
+            <p class="top-header__menu--line"><span></span> <span></span></p>
+          </div>
+        </div>
+      </header>
+      <!-- End Of Top-header Section -->
+      <!-- Estate Section Begins-->
+      <section id="estates">
+        <div class="estates">
+          <div class="estates__title">
+            <h3 class="properties__heading estates__header"><span></span>Estates</h3>
+          </div>
+
+          <section class="estate-wrapper" id="estate-wrapper">
+            <button class="prev" id="prev">
+              <img src="./img/left.svg" alt="previous button">
+            </button>
+            <button class="next" id="next">
+              <img src="./img/right.svg" alt="next button">
+            </button>
+            <div class="estates__cards-section snaps-inline" id="estates_section">
+              <a href="choose-land.html" class="cards">
+                <img src="./img/estate3.svg" alt="" class="cards__img" />
+                <div class="cards__details">
+                  <h2 class="cards__details--header">Eastern Towers</h2>
+                  <p class="cards__details--text">
+                    Lorem ipsum dolor sit amet, consectetur tempor elit
+                  </p>
+                </div>
+              </a>
+              <a href="choose-land.html" class="cards">
+                <img src="./img/estate2.svg" alt="" class="cards__img" />
+                <div class="cards__details">
+                  <h2 class="cards__details--header">Fairfield </h2>
+                  <p class="cards__details--text">
+                    Lorem ipsum dolor sit amet, consectetur tempor elit
+                  </p>
+                </div>
+              </a>
+              <a href="choose-land.html" class="cards">
+                <img src="./img/estate1.svg" alt="" class="cards__img" />
+                <div class="cards__details">
+                  <h2 class="cards__details--header">Dunamon</h2>
+                  <p class="cards__details--text">
+                    Lorem ipsum dolor sit amet, consectetur tempor elit
+                  </p>
+                </div>
+              </a>
+              <a href="choose-land.html" class="cards">
+                <img src="./img/estate3.svg" alt="" class="cards__img" />
+                <div class="cards__details">
+                  <h2 class="cards__details--header">Eastland Golf</h2>
+                  <p class="cards__details--text">
+                    Lorem ipsum dolor sit amet, consectetur tempor elit
+                  </p>
+                </div>
+              </a>
+              <a href="choose-land.html" class="cards">
+                <img src="./img/estate2.svg" alt="" class="cards__img" />
+                <div class="cards__details">
+                  <h2 class="cards__details--header">New Town Estate</h2>
+                  <p class="cards__details--text">
+                    Lorem ipsum dolor sit amet, consectetur tempor elit
+                  </p>
+                </div>
+              </a>
+              <a href="choose-land.html" class="cards">
+                <img src="./img/estate1.svg" alt="" class="cards__img" />
+                <div class="cards__details">
+                  <h2 class="cards__details--header">Eastern Towers</h2>
+                  <p class="cards__details--text">
+                    Lorem ipsum dolor sit amet, consectetur tempor elit
+                  </p>
+                </div>
+              </a>
+          </section>
+        </div>
+        
+        
+        </div>
+      </section>
+      <!-- End Of Estate Section -->
+
+      <div class="footer footer__general unfixed-footer">
+        <div class="add">
+          <img src="img/blackLOcation.svg" alt="Location icon" />
+          <p>
+            3rd Floor, View Point Plaza, Opposite Jubilee Bridge, <br />
+            Ajah, Lagos. 08186577504, 08186577704
+          </p>
+        </div>
+        <div class="social">
+          <a href=""> <img src="img/BlackIG.svg" alt="" /></a>
+          <a href=""> <img src="img/BlackFB.svg" alt="" /></a>
+        </div>
+      </div>
+    </main>
+    <!-- End Of Main-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="js/hover-effect.js"></script>
+    <script src="js/estate.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

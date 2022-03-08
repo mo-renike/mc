@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Middlechase</title>
+  <link rel="shortcut icon" href="img/home-Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+  <!-- Preloader Section -->
+  <div class="preloader">
+    <div class="preloader__text-box" id="p__text-box">
+      <svg id="text-loader" width="914" height="90" viewBox="0 0 914 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M80.48 87L80.36 25.8L50 76.8H44.48L14.12 26.16V87H2.60001V3H12.44L47.48 62.04L82.04 3H91.88L92 87H80.48Z"
+          stroke="white" stroke-width="4" />
+        <path d="M117.209 3H129.209V87H117.209V3Z" stroke="white" stroke-width="4" />
+        <path
+          d="M154.358 3H189.758C198.638 3 206.518 4.76001 213.398 8.28001C220.278 11.8 225.598 16.76 229.358 23.16C233.198 29.48 235.118 36.76 235.118 45C235.118 53.24 233.198 60.56 229.358 66.96C225.598 73.28 220.278 78.2 213.398 81.72C206.518 85.24 198.638 87 189.758 87H154.358V3ZM189.038 76.56C195.838 76.56 201.798 75.24 206.918 72.6C212.118 69.96 216.118 66.28 218.918 61.56C221.718 56.76 223.118 51.24 223.118 45C223.118 38.76 221.718 33.28 218.918 28.56C216.118 23.76 212.118 20.04 206.918 17.4C201.798 14.76 195.838 13.44 189.038 13.44H166.358V76.56H189.038Z"
+          stroke="white" stroke-width="4" />
+        <path
+          d="M253.498 3H288.898C297.778 3 305.658 4.76001 312.538 8.28001C319.418 11.8 324.738 16.76 328.498 23.16C332.338 29.48 334.258 36.76 334.258 45C334.258 53.24 332.338 60.56 328.498 66.96C324.738 73.28 319.418 78.2 312.538 81.72C305.658 85.24 297.778 87 288.898 87H253.498V3ZM288.178 76.56C294.978 76.56 300.938 75.24 306.058 72.6C311.258 69.96 315.258 66.28 318.058 61.56C320.858 56.76 322.258 51.24 322.258 45C322.258 38.76 320.858 33.28 318.058 28.56C315.258 23.76 311.258 20.04 306.058 17.4C300.938 14.76 294.978 13.44 288.178 13.44H265.498V76.56H288.178Z"
+          stroke="white" stroke-width="4" />
+        <path d="M352.639 3H364.639V76.56H410.119V87H352.639V3Z" stroke="white" stroke-width="4" />
+        <path d="M484.849 76.56V87H423.889V3H483.169V13.44H435.889V39.24H478.009V49.44H435.889V76.56H484.849Z"
+          stroke="white" stroke-width="4" />
+        <path
+          d="M541.488 87.96C533.088 87.96 525.488 86.12 518.688 82.44C511.968 78.68 506.688 73.56 502.848 67.08C499.008 60.52 497.088 53.16 497.088 45C497.088 36.84 499.008 29.52 502.848 23.04C506.688 16.48 512.008 11.36 518.808 7.68001C525.608 3.92001 533.208 2.04001 541.608 2.04001C548.168 2.04001 554.168 3.16001 559.608 5.40001C565.048 7.56 569.688 10.8 573.528 15.12L565.728 22.68C559.408 16.04 551.528 12.72 542.088 12.72C535.848 12.72 530.208 14.12 525.168 16.92C520.128 19.72 516.168 23.6 513.288 28.56C510.488 33.44 509.088 38.92 509.088 45C509.088 51.08 510.488 56.6 513.288 61.56C516.168 66.44 520.128 70.28 525.168 73.08C530.208 75.88 535.848 77.28 542.088 77.28C551.448 77.28 559.328 73.92 565.728 67.2L573.528 74.76C569.688 79.08 565.008 82.36 559.488 84.6C554.048 86.84 548.048 87.96 541.488 87.96Z"
+          stroke="white" stroke-width="4" />
+        <path d="M662.887 3V87H650.887V49.56H602.647V87H590.647V3H602.647V39.12H650.887V3H662.887Z" stroke="white"
+          stroke-width="4" />
+        <path
+          d="M741.55 66H696.91L687.67 87H675.31L713.35 3H725.23L763.39 87H750.79L741.55 66ZM737.35 56.4L719.23 15.24L701.11 56.4H737.35Z"
+          stroke="white" stroke-width="4" />
+        <path
+          d="M800.4 87.96C794.08 87.96 787.96 87 782.04 85.08C776.2 83.08 771.6 80.52 768.24 77.4L772.68 68.04C775.88 70.92 779.96 73.28 784.92 75.12C789.96 76.88 795.12 77.76 800.4 77.76C807.36 77.76 812.56 76.6 816 74.28C819.44 71.88 821.16 68.72 821.16 64.8C821.16 61.92 820.2 59.6 818.28 57.84C816.44 56 814.12 54.6 811.32 53.64C808.6 52.68 804.72 51.6 799.68 50.4C793.36 48.88 788.24 47.36 784.32 45.84C780.48 44.32 777.16 42 774.36 38.88C771.64 35.68 770.28 31.4 770.28 26.04C770.28 21.56 771.44 17.52 773.76 13.92C776.16 10.32 779.76 7.44001 784.56 5.28C789.36 3.12001 795.32 2.04001 802.44 2.04001C807.4 2.04001 812.28 2.68001 817.08 3.96C821.88 5.24 826 7.08 829.44 9.48001L825.48 19.08C821.96 16.84 818.2 15.16 814.2 14.04C810.2 12.84 806.28 12.24 802.44 12.24C795.64 12.24 790.52 13.48 787.08 15.96C783.72 18.44 782.04 21.64 782.04 25.56C782.04 28.44 783 30.8 784.92 32.64C786.84 34.4 789.2 35.8 792 36.84C794.88 37.8 798.76 38.84 803.64 39.96C809.96 41.48 815.04 43 818.88 44.52C822.72 46.04 826 48.36 828.72 51.48C831.52 54.6 832.92 58.8 832.92 64.08C832.92 68.48 831.72 72.52 829.32 76.2C826.92 79.8 823.28 82.68 818.4 84.84C813.52 86.92 807.52 87.96 800.4 87.96Z"
+          stroke="white" stroke-width="4" />
+        <path d="M911.412 76.56V87H850.452V3H909.732V13.44H862.452V39.24H904.572V49.44H862.452V76.56H911.412Z"
+          stroke="white" stroke-width="4" />
+      </svg>
+      <p class="preloader__text">Everyday Cashflow</p>
+    </div>
+  </div>
+  <!--End Of Preloader Section -->
+  <!-- Main -->
+
+  <main id="main-content">
+    <!-- Navigation Section -->
+    <div class="navigation">
+      <div class="navigation__wrapper">
+        <div class="navigation__list">
+          <p class="navigation__title">quick links</p>
+          <a href="#" class="navigation__item">Virtual tour</a>
+          <a href="#" class="navigation__item">Privacy policy</a>
+          <a href="#" class="navigation__item">Terms & condition</a>
+        </div>
+        <div class="navigation__list">
+          <p class="navigation__title">projects</p>
+          <a href="choose-estate.html" class="navigation__item">buy land</a>
+          <a href="choose-terrace-estate.html" class="navigation__item">buy terraces</a>
+          <a href="#" class="navigation__item"> buy apartments</a>
+        </div>
+        <div class="navigation__list">
+          <p class="navigation__title">Main</p>
+          <a href="./index.html" class="navigation__item">home</a>
+          <a href="about.html" class="navigation__item">about</a>
+          <a href="contact.html" class="navigation__item">contact</a>
+          <a href="appointment.html" class="navigation__item">book inspection</a>
+        </div>
+      </div>
+      <!-- <div class="line"></div> -->
+      <div class="navigation__footer">
+        <form action="" class="navigation__form">
+          <h5>Subscribe to our Newsletter</h5>
+          <div class="navigation__form-group">
+            <input type="email" placeholder="E-mail" name="newsletter-subscriber" id="newsletter-email" />
+            <button type="submit"><i class="fa fa-arrow-right"></i></button>
+          </div>
+        </form>
+        <div class="navigation__socials">
+          <a href=""><i style="color: #202020;" class="fab fa-facebook"></i></a>
+          <a href=""><i style="color: #202020;" class="fab fa-linkedin"></i></a>
+          <a href=""><i style="color: #202020;" class="fab fa-instagram"></i></a>
+          <a href=""><i style="color: #202020;" class="fab fa-twitter"></i></a>
+          <a href=""><i style="color: #202020;" class="fab fa-youtube"></i></a>
+        </div>
+        <img src="./img/logo2.png" alt="logo" class="logo" />
+      </div>
+      <div class="navigation__cancel-btn">
+        <p class="navigation__cancel-btn--text">X</p>
+      </div>
+    </div>
+    <!-- End Of Navigation Section -->
+
+    <!-- Header Section Begins -->
+    <header class="header">
+      <video autoplay loop class="video-bg" muted plays-inline>
+        <source src="img/md__video.mp4" type="video/mp4" />
+      </video>
+      <div class="logo-box">
+        <a href="index.html">
+          <img src="img/home-Logo.png" alt="MD" class="logo-box__logo" /></a>
+      </div>
+      <div class="nav-btn__box">
+        <div class="nav-btn__login">
+          <span class="nav-btn__login--text">Login</span>
+          <ion-icon name="person-outline" class="nav-btn__login--icon"></ion-icon>
+        </div>
+        <div class="nav-btn__menu" id="menu">
+          <p class="nav-btn__menu--line"><span></span> <span></span></p>
+        </div>
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">Own a Property</h1>
+        <p class="text-primary text-white">
+          Acquire a rewarding home investment anywhere in Nigeria.
+        </p>
+        <div class="header__btn-box">
+          <a href="choose-estate.html" class="btn bg-white btn__nav btn__header w-50">Buy Land</a>
+          <a href="choose-terrace.html" class="btn btn__nav btn__header btn__apartment w-50">Buy Houses</a>
+        </div>
+      </div>
+
+      <!-- footer Section -->
+      <div class="hr"></div>
+      <footer class="footer">
+        <div class="add">
+          <img src="img/Location.svg" alt="Location icon" />
+          <p class="text-primary__footer text-white">
+            3rd Floor, View Point Plaza, Opposite Jubilee Bridge, <br />
+            Ajah, Lagos. 08186577504, 08186577704
+          </p>
+        </div>
+        <div class="social">
+          <a href=""> <img src="img/whiteIG.svg" alt="" /></a>
+          <a href=""> <img src="img/whiteFB.svg" alt="" /></a>
+        </div>
+      </footer>
+      <!-- End Of footer Section -->
+    </header>
+    <!-- End Of Header Section -->
+  </main>
+  <!-- End Of Main-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="js/hover-effect.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

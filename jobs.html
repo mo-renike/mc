@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>job - Middlechase</title>
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Main -->
+    <main id="main-content">
+      <!-- Navigation Section -->
+      <div class="navigation">
+        <div class="navigation__wrapper">
+          <div class="navigation__list">
+            <p class="navigation__title">quick links</p>
+            <a href="#" class="navigation__item">Virtual tour</a>
+            <a href="#" class="navigation__item">Privacy policy</a>
+            <a href="#" class="navigation__item">Terms & condition</a>
+          </div>
+          <div class="navigation__list">
+            <p class="navigation__title">projects</p>
+            <a href="choose-estate.html" class="navigation__item">buy land</a>
+            <a href="choose-terrace-estate.html" class="navigation__item"
+              >buy terraces</a
+            >
+            <a href="#" class="navigation__item"> buy apartments</a>
+          </div>
+          <div class="navigation__list">
+            <p class="navigation__title">Main</p>
+            <a href="./index.html" class="navigation__item">home</a>
+            <a href="about.html" class="navigation__item">about</a>
+            <a href="contact.html" class="navigation__item">contact</a>
+            <a href="appointment.html" class="navigation__item"
+              >book inspection</a
+            >
+          </div>
+        </div>
+        <!-- <div class="line"></div> -->
+        <div class="navigation__footer">
+          <form action="" class="navigation__form">
+            <h5>Subscribe to our Newsletter</h5>
+            <div class="navigation__form-group">
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="newsletter-subscriber"
+                id="newsletter-email"
+              />
+              <button type="submit"><i class="fa fa-arrow-right"></i></button>
+            </div>
+          </form>
+          <div class="navigation__socials">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <img src="./img/logo2.png" alt="logo" class="logo" />
+        </div>
+        <div class="navigation__cancel-btn">
+          <p class="navigation__cancel-btn--text">X</p>
+        </div>
+      </div>
+      <!-- End Of Navigation Section -->
+
+      <!-- Top-header Section Begins -->
+      <header class="top-header">
+        <div class="top-header__logo">
+          <a href="index.html">
+            <img src="img/logo2.png" alt="MD" class="logo"
+          /></a>
+        </div>
+        <div class="top-header__nav">
+          <div class="top-header__login">
+            <span class="top-header__login--text">Login</span>
+            <ion-icon
+              name="person-outline"
+              class="top-header__login--icon"
+            ></ion-icon>
+          </div>
+          <div class="top-header__menu" id="menu">
+            <p class="top-header__menu--line"><span></span> <span></span></p>
+          </div>
+        </div>
+      </header>
+      <!-- End Of Top-header Section -->
+
+      <div class="job">
+        <div class="job__header">
+          <div class="job__header-text">
+            <div>
+              <h3 class="properties__heading estates__header">
+                <span></span>Available jobs
+              </h3>
+              <p>
+                Find your next job at any of our available vacancy that you can
+                fit.
+              </p>
+            </div>git stat
+            <br />
+
+            <form class="job__search-form">
+              <div class="job__search-wrapper">
+                <i class="fa fa-search"></i>
+                <input
+                  type="search"
+                  placeholder="Search Job by name"
+                  class="job__searchBar"
+                  name="jobSearch"
+                  id="job_search_bar"
+                />
+              </div>
+              <button
+                class="job__search_btn btn__nav btn__header"
+                type="submit"
+                id="job_search_btn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="job__wrapper">
+          <div class="job__left-bar">
+            <form action="">
+              <h5>Job type</h5>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="full-time-job"
+                  name="full-time"
+                  id="full_time_job"
+                />
+                <label for="fulltime">Full Time</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="full-time-job"
+                  name="full-time"
+                  id="full_time_job"
+                />
+                <label for="fulltime">Part time</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="full-time-job"
+                  name="full-time"
+                  id="full_time_job"
+                />
+                <label for="fulltime">Contract</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="full-time-job"
+                  name="full-time"
+                  id="full_time_job"
+                />
+                <label for="fulltime">Internship</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="full-time-job"
+                  name="full-time"
+                  id="full_time_job"
+                />
+                <label for="fulltime">remote</label>
+              </div>
+              <h5>Salary range</h5>
+              <select
+                name="salary_range"
+                id="salary_range"
+                class="form__select"
+              >
+                <option value="" disabled="disabled" selected="selected">
+                  N100,000 - N150,000
+                </option>
+                <option value="commission">Commission</option>
+                <option value="below 100">Below N100,000</option>
+                <option value="150-200">N150,000 - N200,000</option>
+                <option value="200-250">N1200,000 - N250,000</option>
+                <option value="250-300">N250,000 - N300,000</option>
+                <option value="above 300">Above N300,000</option>
+              </select>
+              <h5>experience level</h5>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="senior"
+                  name="senior"
+                  id="senior_level"
+                />
+                <label for="fulltime">Senior</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="intermediate"
+                  name="intermediate"
+                  id="intermediate_level"
+                />
+                <label for="fulltime">intermediate</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="checkbox"
+                  value="beginner"
+                  name="beginner"
+                  id="beginner_level"
+                />
+                <label for="fulltime">beginner</label>
+              </div>
+
+              <h5>Location</h5>
+              <select
+                name="job_location"
+                id="job_location"
+                class="form__select"
+              >
+                <option value="" disabled="disabled" selected="selected">
+                  Lagos
+                </option>
+                <option value="lagos">lagos</option>
+                <option value="abuja">Abuja</option>
+                <option value="ibadan">ibadan</option>
+                <option value="ogun">ogun</option>
+                <option value="porthacourt">Porthacourt</option>
+                <option value="uk">UK</option>
+              </select>
+              <button
+                class="w-100 mt-3 job__search_btn btn__nav btn__header"
+                type="submit"
+              >
+                Apply
+              </button>
+            </form>
+          </div>
+
+          <div class="job__content" id="jobList">
+            <!-- <div class="job__item">
+              <div class="job__item-header">
+                <img src="/img/logo2.png" alt="" class="job__item-img" />
+                <div>
+                  <h5>Building Contractor</h5>
+
+                  <p><i class="fa fa-map-marker-alt"></i> Ajah, Lagos</p>
+                </div>
+              </div>
+              <div class="job__item-content">
+                <strong>Requirements:</strong> Requirement: Since 2010, our
+                vision has been to help property buyers become cashflow
+                landlords. Hence Middlechase is regarded as The No. 1 Rental
+                Income Developer... <a href="">Read More</a>
+              </div>
+              <div class="job__item-footer">
+                <div class="job__item-tags">
+                  <span class="job__item-tag">Remote</span>
+                  <span class="job__item-tag">Contract</span>
+                  <span class="job__item-tag">Full time</span>
+                </div>
+                <p class="job__item-date">Posted 2 days ago</p>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="job__right-bar">
+            <div class="job__alert-box">
+              <h5>Create Job Alert</h5>
+              <p>
+                Enter your email to get latest news and jobs you might be
+                interested in.
+              </p>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                class="job__searchBar mt-3 text-center p-0"
+                name="email_alerts"
+                id="email_alerts"
+              />
+              <button
+                class="w-100 mt-3 btn-border job__search_btn bg-white btn__nav btn__header"
+                type="submit"
+              >
+                Create Alert
+              </button>
+            </div>
+            <div class="job__news-box">
+              <img src="img/sideImg.png" class="w-100" alt="" />
+              <img src="img/logo2.png" alt="" class="news-logo" />
+              <div class="text">
+                <h5>Arkbridge open to collaboration</h5>
+                <button
+                  class="w-100 mt-3 job__search_btn btn__nav btn__header"
+                  type="submit"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="job__news-box">
+              <img src="img/sideImg.png" class="w-100" alt="" />
+              <img src="img/logo2.png" alt="" class="news-logo" />
+              <div class="text">
+                <h5>Arkbridge open to collaboration</h5>
+                <button
+                  class="w-100 mt-3 job__search_btn btn__nav btn__header"
+                  type="submit"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer footer__general mt-0 unfixed-footer">
+        <div class="add">
+          <img src="img/blackLOcation.svg" alt="Location icon" />
+          <p>
+            3rd Floor, View Point Plaza, Opposite Jubilee Bridge, <br />
+            Ajah, Lagos. 08186577504, 08186577704
+          </p>
+        </div>
+        <div class="social">
+          <a href=""> <img src="img/BlackIG.svg" alt="" /></a>
+          <a href=""> <img src="img/BlackFB.svg" alt="" /></a>
+        </div>
+      </div>
+    </main>
+    <!-- End Of Main-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="js/hover-effect.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jobs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "name": "middlechase-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=testing jest --watch --runInBand --verbose --resetModules  --testTimeout=50000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.51.0",
+    "@aws-sdk/credential-provider-node": "^3.51.0",
+    "aws-sdk": "^2.1072.0",
+    "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "form-data": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-s3": "^2.10.0",
+    "mysql2": "^2.3.3",
+    "node-notifier": "^10.0.1",
+    "nodemailer": "^6.7.2",
+    "nodemailer-stub": "^1.2.2",
+    "sequelize": "^6.15.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "supertest": "^6.2.2"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "semi": "warn",
+      "quotes": [
+        "warn",
+        "single"
+      ],
+      "eqeqeq": "warn"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  },
+  "jest": {
+    "verbose": true,
+    "resetModules": true
+  }
+}

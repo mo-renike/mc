@@ -1,0 +1,194 @@
+.appointment {
+  margin-top: 8rem;
+  padding: 5rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include respond(tab-land) {
+    padding: 5rem 5rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 5rem 2rem;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 55%;
+
+    @include respond(tab-land) {
+      width: 50%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      width: 12ch;
+      font-size: 2.5em;
+      font-weight: 600;
+      margin: 0.5em 0;
+      line-height: 1;
+      font-family: "Taviraj", "Montserrat", sans-serif;
+
+      // @include respond(tab-port) {
+      //   margin: 1.5em auto;
+      // }
+
+      @include respond(tab-port) {
+        margin: 0.5em auto;
+      }
+    }
+
+    p {
+      color: $color-gray-1;
+      width: 40ch;
+      font-family: "Montserrat", sans-serif;
+
+      @include respond(tab-port) {
+        width: 28ch;
+        margin: auto;
+      }
+    }
+
+    img {
+      margin-top: 3rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+  }
+  .appointment-form {
+    width: 38%;
+
+    @include respond(tab-land) {
+      width: 45%;
+    }
+
+    @include respond(tab-port) {
+      width: 70%;
+      margin: auto;
+      margin-top: 2em;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin-top: 2em;
+    }
+
+    form {
+      width: 100%;
+      box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 2.5rem 2rem;
+
+      .form__group {
+        width: 100%;
+        margin: 1.5rem 0;
+
+        label {
+          font-size: 0.8em;
+          font-weight: 600;
+          color: $color-gray-1;
+          margin: 1.5rem 0;
+        }
+        .input-wrapper {
+          width: 100%;
+          // border: 1px solid $color-gray-4;
+          display: flex;
+          align-items: center;
+          color: $color-gray-4;
+          position: relative;
+
+          span {
+            position: absolute;
+            left: 1.5rem;
+
+            i {
+              padding: 0;
+              margin: 0;
+              bottom: 0;
+              position: relative;
+              color: $dark_gray;
+            }
+          }
+
+          input {
+            outline: none;
+            border: 1px solid $color-gray-4;
+            border-radius: 2px;
+            width: 100%;
+            padding: 1.2rem 5rem;
+            font-size: 0.9em;
+            color: $color-gray-1;
+
+            @include respond(phone) {
+              border-radius: 8px;
+              padding: 2rem 5rem;
+            }
+          }
+        }
+      }
+      .appointment_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+        gap: 2em;
+        margin: 0;
+        padding: 0;
+
+        .form__group {
+          .input-wrapper {
+            input {
+              padding: 1.5rem 1rem;
+            }
+          }
+        }
+
+        @include respond(smallphone) {
+          grid-template-columns: 1fr;
+        }
+
+        .form__group {
+          margin: 0 0;
+        }
+      }
+      .appointment_flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 1em auto;
+        padding: 2rem 0px 0px 0px;
+
+        button {
+          border-radius: 30px;
+          padding: 1.2rem 2.8rem;
+          background: $color-primary-cosmic;
+          // border: 1px solid transparent;
+          color: white;
+          font-size: 1em;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          background-color: $color-primary-tango;
+          padding: 0.8rem 1.6rem;
+          font-size: 1.5em;
+          font-weight: 500;
+          border-radius: 100%;
+          text-align: center;
+
+          &:hover {
+            background-color: $color-primary-cosmic;
+          }
+        }
+      }
+    }
+  }
+}

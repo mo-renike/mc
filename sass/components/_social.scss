@@ -1,0 +1,40 @@
+.social {
+  &__icon-box {
+    margin-top: 1.5rem;
+  }
+  &__icon-item {
+    list-style: none;
+    text-decoration: none;
+  }
+  &__icon {
+    font-size: 2.6rem;
+    margin-right: 0.6rem;
+    fill: $color-gray-5;
+    transition: all 0.6s ease;
+    &--1 {
+      &:hover {
+        fill: #3f62a9;
+      }
+    }
+    &--2 {
+      &:hover {
+        fill: #005c8b;
+      }
+    }
+    &--3 {
+      &:hover {
+        fill: #cc2b79;
+      }
+    }
+    &--4 {
+      &:hover {
+        fill: #1c99e6;
+      }
+    }
+    &--5 {
+      &:hover {
+        fill: #f20000;
+      }
+    }
+  }
+}

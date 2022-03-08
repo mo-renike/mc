@@ -1,0 +1,75 @@
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  padding: 0.5rem 5rem;
+  z-index: 8;
+
+  &__general {
+    position: fixed !important;
+    margin-top: 4rem;
+    border-top: 1px solid rgba($color-black2, 0.4);
+    padding: 2rem;
+    bottom: 0;
+    background-color: $color-white;
+    z-index: 300;
+
+    @include respond(phone) {
+      background-color: $color-white;
+      z-index: 10;
+    }
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .add {
+    display: flex;
+    font-size: 80%;
+    color: inherit;
+    align-items: center;
+
+    img {
+      height: 3.2rem;
+      width: 2.2rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .social {
+    display: flex;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    img {
+      width: 2.6rem;
+      height: 2.6rem;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.hr {
+  background-color: rgba($color-gray-6, 0.4);
+  width: 92%;
+  height: 0.1px;
+  position: absolute;
+  margin: 0rem 5rem;
+  left: 0rem;
+  bottom: 6.3rem;
+
+  @include respond(phone) {
+    margin: 0 1rem;
+    width: 95%;
+    bottom: 6.6rem;
+  }
+}

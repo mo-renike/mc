@@ -1,0 +1,164 @@
+.registration {
+  height: 100vh;
+
+  &__text-box {
+    // background: url(../img/form_bg.png);
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 50%;
+    background-color: #481B3A;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__bg {
+    .eclipse {
+      position: absolute;
+      top: 0;
+      height: 70%;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    right: 6rem;
+    bottom: 7rem;
+    color: $color-white;
+    width: 75%;
+
+    &--h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+      //   line-height: 7.2rem;
+
+      &-main {
+        font-size: 3.1rem;
+        line-height: 5rem;
+        font-weight: 800;
+      }
+    }
+
+    &--p {
+      font-size: 1.2rem;
+      font-weight: 300;
+
+      &-main {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__form_confirmation {
+    flex: 30% 0;
+    width: 30%;
+    margin: 5rem auto;
+    right: 10%;
+    top: 1rem;
+    position: absolute;
+    padding-bottom: 5rem;
+
+    @include respond(tab-port) {
+      flex: 80% 0;
+      width: 80%;
+    }
+  }
+
+  &__form_wrapper {
+    input {
+      padding: 1.5rem 3rem;
+    }
+  }
+
+  // #downPaymentAmount{
+  //   display: none;
+  // }
+}
+
+.buy-form {
+  display: none;
+  opacity: 0;
+  animation: aminate-form 0.7s ease;
+  margin-bottom: 3rem;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes aminate-form {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+/*progressbar*/
+#progressbar {
+  margin-bottom: 3rem;
+  overflow: hidden;
+  counter-reset: step;
+  width: 100%;
+  text-align: center;
+
+  li {
+    list-style-type: none;
+    color: $color-gray-1;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 30%;
+    float: left;
+    position: relative;
+
+    &:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 20px;
+      line-height: 20px;
+      display: block;
+      font-size: 10px;
+      color: $color-gray-1;
+      background: $color-white;
+      border-radius: 50%;
+      border: 1px solid $color-gray-1;
+      margin: 0 auto 5px auto;
+    }
+
+    /*progressbar connectors*/
+    &:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $color-gray-1;
+      position: absolute;
+      left: -50%;
+      top: 9px;
+      z-index: -1;
+      transition: 0.5s ease;
+    }
+
+    &:first-child:after {
+      content: none;
+    }
+
+    &.active:before,
+    &.active:after {
+      background: $color-primary-cosmic;
+      color: $color-white;
+    }
+  }
+}

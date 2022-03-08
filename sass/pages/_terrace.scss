@@ -1,0 +1,160 @@
+.choose-terrace-page {
+  height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  overflow-y: scroll;
+}
+.terrace {
+  width: 90%;
+  margin: 0 auto 0;
+  padding: 1.6rem 1.6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  &__header {
+    color: $color-black;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+  }
+
+  &__btn {
+    padding: 1em 2em;
+    background: $color-gray-3;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    cursor: not-allowed;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.terrace-options {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  width: 70ch;
+  gap: 1em;
+  justify-content: center;
+  margin: 1.5rem auto;
+  color: $color-black2;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap-reverse;
+    gap: 1em;
+    width: 70ch;
+  }
+
+  @include respond(phone) {
+    width: 70%;
+    justify-content: flex-end;
+  }
+
+  @include respond(smallphone) {
+    width: 90%;
+  }
+
+  .option {
+    margin: auto 0.6em;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    cursor: pointer;
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked ~ label span {
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.9em;
+        border-color: $color-primary-tango;
+        background: $color-primary-tango;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          content: "\2713";
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &__label {
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+      cursor: pointer;
+
+      span {
+        width: 14px;
+        height: 14px;
+        border: 2px solid $color-gray-3;
+        border-radius: 3px;
+        margin-right: 0.3em;
+      }
+    }
+
+    &__input:checked ~ .option__label {
+      color: $color-primary-tango;
+      font-weight: 500;
+    }
+    @include respond(tab-port) {
+      max-width: 45%;
+    }
+    @include respond(phone) {
+      min-width: 50%;
+      max-width: 100%;
+    }
+  }
+}
+
+.terrace__btn--active {
+  background: $color-primary-cosmic;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-primary-tango;
+  }
+}
+
+.terrace-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+
+  &__btn {
+    background: transparent;
+    border: none;
+    padding: 1em;
+    font-size: 7rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  &__image-wrapper {
+    width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+}
+.unfixed-footer {
+  position: relative !important;
+}

@@ -1,0 +1,13 @@
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  &_1_of_2 {
+    flex: 0 0 50%;
+  }
+  &_1_of_4 {
+  }
+}

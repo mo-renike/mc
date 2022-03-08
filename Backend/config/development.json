@@ -1,0 +1,18 @@
+{
+	"databaseConfig": {
+    "serverPort": 5000,
+    "port": 3306,
+    "host": "localhost",
+    "password": "@Root321",
+    "userName": "root",
+    "databaseName": "middlechaseDB",
+    "dialect": "mysql",
+    "storage": "./storage/database.mysql",
+    "JWT_KEY": "dev_key",
+    "bucket_accessKeyId": "AKIA3WFNN4UP7Z4GCSX5",
+    "bucket_secretAccessKey": "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",
+    "bucket": "middlechase",
+    "email": "dev@middlechase.com",
+    "email_password": "tech@middlechase.com"
+  }
+}
